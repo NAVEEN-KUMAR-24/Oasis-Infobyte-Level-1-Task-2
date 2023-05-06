@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(naveen12.png);
+    background-size: cover;
+    background-position: center;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container nav h1{
+    padding: 30px 40px;
+    font-size: 100px;
+}
+.container nav h1 span, .text span, .c2 span{
+    color: red;
+}
+ul{
+    list-style: none;
+}
+.container nav ul li a{
+    padding-right: 10px;
+    padding-top: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container nav ul li{
+    display: inline-block;
+    margin: 10px 30px;
+    position: relative;
+}
+nav ul li a:after {
+    content: ''; 
+    width: 0%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 90%;
+}
+.text{
+    padding: 100px 50px;
+    font-size: 30px;
+    max-width: 1000px;
+}
+#about{
+    padding: 80px 55px;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.c1{
+    flex-basis: 35%;
+}
+.c1 img{
+    width: 100%; 
+    border-radius: 15px;
+}
+.c2{
+    flex-basis: 60%;
+}
+.c2 h1{
+    font-size: 40px ;
+    /* font-weight: 600; */
+}
+.c2 p{
+    font-size: 15px;
+}
+.titles{
+    display: flex;
+    margin: 20px 0px 40px;
+}
+.title-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.title-links:after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.title-links:hover:after{
+    width: 100%;
+}
+.title-links.active-link:after{
+    width: 50%;
+}
+.title-contents ul li{
+    margin: 10px 0px;
+}
+.title-contents ul li span{
+    font-size: 30px;
+}
+.title-contents{
+    display: none;
+}
+.title-contents.active-title{
+    display: block;
+}
+.titles p{
+    font-size: 20px;
+}
+.title-contents ul li span{
+    font-size: 20px;
+}
+/* ----------------SERVICES------------------------- */
+#services{
+    padding: 30px 50px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;  
+    transition: background0.5s, transform 0.5s;  
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+background-color: red;
+transform: translateY(-15px);
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 1000;
+}
+.sub-title span{
+    color: red;
+}
+
+/* --------------------------PORTFOLIO----------------------------- */
+
+#portfolio{
+    padding: 30px 50px;
+}
+#portfolio  .container h1{
+    font-size: 40px;
+    font-weight: 1000;
+}
+#portfolio  .container .sub-title span{
+    color: red;
+}
+.work-list{
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    /* max-width: 500px; */
+    transition: transform 0.5s;
+
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), red);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* --------------------------CONTACT----------------------------- */
+#contact{
+    padding: 30px 50px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: background-0.5s, transform 0.5s; 
+}
+.btn:hover{
+    background-color: red;
+}
+.btn .btn2{
+display: inline-block;
+background-color: red;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background-color: #262626;
+    margin-top: 20px;
+}
+.contact-left .sub-title{
+    font-size: 40px;
+}
+#span{
+    color: red;
+    margin-top: -50px;
+    display: block;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/faf6ee98d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>N</span>AVEEN<span>.</span></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="text">
+                <h1>Hello, I'm <span>Naveen Kumar</span> from Hyderabad, India</h1>
+                <p>Software Developer, Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------ABOUT--------------------------------------------------     -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="c1">
+                    <img src="image.jpg" height="500px">
+                </div>
+                <div class="c2">
+                    <h1>About <span>Me</span></h1>
+                    <p>
+                        Hello Everyone
+                    </p>
+                    <p>
+                        My name is Naveen Kumar from Hyderabad. Presently I'm pursuing my Under Graduation from CMR College of Engineering and Technology, Medchal in the department of Computer Science and Engineering(Cybersecurity). 
+                        I am curious at learning new technologies and provide my service with all my best. In future I want to be in a good position in IT sector.                     
+                    </p>
+                    <div class="titles">
+                        <p class="title-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="title-links" onclick="opentab('education')">Education</p>
+                        <p class="title-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="title-contents active-title" id="skills">
+                        <ul>
+                            <li><span>Developer</span><br>Software Development using C++, C, JAVA, Python</li>
+                            <li><span>Frontend Developer</span><br>Frontend Web Development using HTML, CSS, JavaScript</li>
+                            <li><span>Database</span><br>Database Management using MYSQL and MongoDB</li>
+                            <li><span>Machine Learning</span><br>Beginner in Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="title-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>CGPA:8.39  CSE(Cybersecurity), CMR College of Engineering and Technology, Hyderabad</li>
+                            <li><span>Intermediate</span><br>CGPA: 9.66  Abhyaas Junior Colege, Hyderabad</li>
+                            <li><span>10th Standard</span><br>CGPA:8.80  Akshara School, Tandur</li>
+                        </ul>
+                    </div>
+                    <div class="title-contents" id="experience">
+                        <ul>
+                            <li><span>INTERN</span><br>(May 2022 - June 2022)Machine Learning Intern at Verzeo.</li>
+                            <li><span>SUDOKU Event</span><br>Conducted Sudoku Game in AZURA-2022 in our college.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------SERVICES----------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi cumque praesentium nostrum. Minus reiciendis, dolores temporibus nostrum dolore ducimus eius facilis vitae recusandae nisi natus laborum delectus alias deleniti nulla vel, ipsa, sint aliquid in. Nihil nulla quia, nemo eveniet qui harum molestiae. Recusandae distinctio dicta doloremque voluptates? Placeat!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi cumque praesentium nostrum. Minus reiciendis, dolores temporibus nostrum dolore ducimus eius facilis vitae recusandae nisi natus laborum delectus alias deleniti nulla vel, ipsa, sint aliquid in. Nihil nulla quia, nemo eveniet qui harum molestiae. Recusandae distinctio dicta doloremque voluptates? Placeat!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Managemnent</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi cumque praesentium nostrum. Minus reiciendis, dolores temporibus nostrum dolore ducimus eius facilis vitae recusandae nisi natus laborum delectus alias deleniti nulla vel, ipsa, sint aliquid in. Nihil nulla quia, nemo eveniet qui harum molestiae. Recusandae distinctio dicta doloremque voluptates? Placeat!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------PORTFOLIO-----------------------------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" height="400px">
+                    <div class="layer">
+                        <h1>Geature Recognition</h1>
+                        <p>Python, Machine Learning</p>
+                        <p>My project provides an easy way to translate hand gestures language into data and gives the related information</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpeg" height="400px">
+                    <div class="layer">
+                        <h1>Library Books Management System</h1>
+                        <p>Arduino, Python, C++, IOT objects</p>
+                        <p>It is a protocol model of a machince which can take a book from the counter, scan QR Code and move that book to its shelve through belt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------CONTACT------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>Contact</span> Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kuranaveenkumar24@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 XXXXXXXX48</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Naveen Kumar 2020-2024 </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var titlelinks = document.getElementsByClassName("title-links")
+        var titlecontents = document.getElementsByClassName("title-contents")
+        function opentab(titlename)
+        {
+            for(titlelink of titlelinks){
+                titlelink.classList.remove("active-link");
+            }
+            for(titlecontent of titlecontents){
+                titlecontent.classList.remove("active-title");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(titlename).classList.add("active-title");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpsztcHKCCQ14qAt6ottyV9l6Arc-FkiUeRTQvcEBj3G4anWFugLsZY4XEa62ix6hBwQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+<!--Google Sheets Link 
+    https://docs.google.com/spreadsheets/d/15YUjSaaKOhWzj8x7wstIHKX_u4Ef4qJ8JZWxEN0LzoA/edit#gid=0 
+-->
